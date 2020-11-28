@@ -11,11 +11,32 @@ const tutorials = [
   'what is JSONP?'
 ];
 
+// console.log(tutorials)
+
 // const titleCased = () => {
 //   return tutorials
 // }
 
-//////////// SOLUTION ////////////
+
+
+///// WHY?? MY SOLUTION WORKS BUT DOESN"T PASS TEST /////
+// let titleCased = () => {
+//     tutorials.map(function(tutorial) {
+//       console.log("Hello?")
+//       return tutorial.replace(
+//         /\w\S*/g,
+//         function(txt) {
+//           return txt.charAt(0).toUpperCase() + txt.substr(1);
+//         }
+//       );
+//     })
+//   }
+
+// console.log("I'm here now")
+// console.log(titleCased)
+
+
+////////////  ⬇️ SOLUTION ⬇️  ////////////
 
 const titleCased = () => {
   return tutorials.map( tutorialTitle => {
@@ -27,49 +48,4 @@ const titleCased = () => {
   })
 }
 
-//////////////////////////////////
-
-
-//  TESTING    TESTING    TESTING
-// const titleCased = () => {
-//   return tutorials.map( tutorialTitle => {
-//     let splitTitles = tutorialTitle.split(' ')
-//     let capitalizedFirstLetter;
-
-//     return splitTitles
-
-//   })
-// }
-
-
-console.log(titleCased())
-
-
-// MY SECOND EFFORT
-
-// const titleCased = () => {
-//   return tutorials.map(function(tutorial) {
-//     return tutorial.replace(
-//           /\w\S*/g,
-//         function(txt) {
-//           return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-//         }
-//       );
-//   })
-// }
-
-
-
-// MY ORIGINAL SOLUTION
-
-// let titleCased = tutorials.map(function(tutorial) {
-//   return tutorial.replace(
-//     /\w\S*/g,
-//     function(txt) {
-//       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-//     }
-//   );
-// })
-
-// console.log(ans)
-
+////////////  ⬆️ SOLUTION ⬆️  ////////////
